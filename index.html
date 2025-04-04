@@ -31,12 +31,28 @@
         font-style: normal;
       }
     </style>
+
+    <!-- colors customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-primary": "#E76F51",
+              "bg-primary": "rgba(231, 111, 81, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="poppins-fonts">
-    <header>
-      <nav class="w-[1130px] mx-auto mt-12 mb-12">
+    <header class="md:container mx-auto">
+      <!-- navbar -->
+      <nav class="mt-12 mb-12">
         <div class="navbar">
-          <div class="navbar-start">
+          <div class="flex-1">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
@@ -56,29 +72,185 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 hover:bg-orange-200"
+                class="menu menu-sm dropdown-content bg-orange-200 rounded-box z-1 mt-3 w-52 p-2 hover:bg-orange-200"
               >
-                <li class="hover:bg-green-300 rounded-lg"><a>Home</a></li>
-                <li class="hover:bg-green-300 rounded-lg"><a>Shop</a></li>
-                <li class="hover:bg-green-300 rounded-lg"><a>News</a></li>
-                <li class="hover:bg-green-300 rounded-lg"><a>Contact</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/">Home</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/bike-price-in-bd">Shop</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/upcoming-bikes-in-bangladesh">News</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/contact-us">Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-3xl font-bold hover:bg-green-600 rounded-lg hover:text-white pt-7 pb-7">Go Ride</a>
+            <a
+              class="btn btn-ghost text-3xl font-bold hover:bg-green-600 rounded-lg hover:text-white pt-7 pb-7"
+              >Go Ride</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 gap-9">
-              <li class="hover:bg-teal-300 rounded-lg"><a>Home</a></li>
-              <li class="hover:bg-teal-300 rounded-lg"><a>Shop</a></li>
-              <li class="hover:bg-teal-300 rounded-lg"><a>News</a></li>
-              <li class="hover:bg-teal-300 rounded-lg"><a>Contact</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/">Home</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/bike-price-in-bd">Shop</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/upcoming-bikes-in-bangladesh">News</a></li>
+              <li class="hover:bg-teal-300 rounded-lg font-bold"><a href="https://www.bikebd.com/contact-us">Contact</a></li>
             </ul>
-            <div>
-              <a class="btn btn-error text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl ml-12 ">Login</a>
-            </div>
+          </div>
+          <div>
+            <a href="https://www.bikebd.com/login"
+              class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl ml-12"
+              >Login</a
+            >
           </div>
         </div>
       </nav>
+
+      <!-- bike sliders section -->
+
+      <div class="carousel w-full bg-bg-primary lg:h-[550px]">
+        <!-- slider 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row lg:p-[96px] p-20 gap-8">
+            <!-- text content -->
+            <div class="flex-1 space-y-7">
+              <h2 class="text-6xl font-bold">Ride-on ZT155-GK with Smile</h2>
+              <p class="text-base font-light">
+                ZONTES ZT155 GK Price in Bangladesh is Tk 439,000.This Bike is
+                powered by 150 Cc, which generates a maximum power of 18.80 Bhp
+                @ 9250 rpm, and its maximum torque is 16.00 Nm @ 7500 rpm.
+                ZONTES ZT155 GK mileage in city 40 Kmpl and on highway 45 kmpl.
+              </p>
+
+              <button>
+                <a
+                  href="https://www.bikebd.com/price/zontes-zt155-gk"
+                  class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl"
+                >
+                  Purchase
+                </a>
+              </button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike1.png" alt="" class="w-[450px]" />
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slider 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row lg:p-[105px] p-20 gap-12">
+            <!-- text content -->
+            <div class="flex-1 space-y-7">
+              <h2 class="text-6xl font-bold">Ride-on ZT155-G1 with Smile</h2>
+              <p class="text-base font-light">
+                Zontes ZT155 G1 Price in Bangladesh is Tk 389,000.This Bike is
+                powered by 150 Cc, which generates a maximum power of 18.50 Bhp
+                @ 9250 rpm, and its maximum torque is 16.00 Nm @ 7500 rpm.
+                Zontes ZT155 G1 mileage in city 35 Kmpl on highway 40 kmpl.
+              </p>
+              <button>
+                <a
+                  href="https://www.bikebd.com/price/zontes-zt155-g1"
+                  class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl"
+                >
+                  Purchase</a
+                >
+              </button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike2.png" alt="" class="w-[450px]" />
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slider 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row lg:p-[105px] p-20 gap-10">
+            <!-- text content -->
+            <div class="flex-1 space-y-7">
+              <h2 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />
+                with Smile
+              </h2>
+              <p class="text-base font-light">
+                The Yamaha R15 V4 is not just a motorcycle; it's a perfect blend
+                of performance, technology, and style that caters to biking
+                enthusiasts. Its aerodynamic design is inspired by Yamaha's
+                superbike lineage, ensuring optimal speed and stability.
+              </p>
+
+              <button>
+                <a
+                  href="https://www.bikebd.com/price/r15-v4-price-in-bangladesh"
+                  class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl"
+                  >Purchase</a
+                >
+              </button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike3.png" alt="" class="w-[450px]" />
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slider 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row lg:p-[105px] p-20 gap-8">
+            <!-- text content -->
+            <div class="flex-1 space-y-7">
+              <h2 class="text-6xl font-bold">
+                Ride-on ZT155-G1 <br />
+                with Smile
+              </h2>
+              <p class="text-base font-light">
+                Zontes ZT155 G1 Price in Bangladesh is Tk 389,000.This Bike is
+                powered by 150 Cc, which generates a maximum power of 18.50 Bhp
+                @ 9250 rpm, and its maximum torque is 16.00 Nm @ 7500 rpm.
+                Zontes ZT155 G1 mileage in city 35 Kmpl on highway 40 kmpl.
+              </p>
+              <button>
+                <a
+                  href="https://www.bikebd.com/price/zontes-zt155-g1"
+                  class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl"
+                  >Purchase</a
+                >
+              </button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike4.png" alt="" class="w-[450px]" />
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
