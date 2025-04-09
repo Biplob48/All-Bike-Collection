@@ -49,12 +49,14 @@
               clifford: "#da373d",
               "btn-primary": "#E76F51",
               "bg-primary": "rgba(231, 111, 81, 0.1)",
+              "bg-footer": "#0B0D17",
             },
           },
         },
       };
     </script>
   </head>
+
   <body class="poppins-fonts">
     <header class="md:container mx-auto">
       <!-- navbar -->
@@ -98,10 +100,8 @@
                 </li>
               </ul>
             </div>
-            <a
-              class="btn btn-ghost text-3xl font-bold hover:bg-green-600 rounded-lg hover:text-white pt-7 pb-7"
-              >Go Ride</a
-            >
+            <a href="https://youtu.be/XiAqmlIEFi0?si=FeMSF1cxf29ikU6E"> 
+              <p class="btn btn-ghost text-3xl font-bold hover:bg-green-400 rounded-lg">Go Ride 🚴‍♀️</p></a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 gap-9">
@@ -112,7 +112,7 @@
                 <a href="https://www.bikebd.com/bike-price-in-bd">Shop</a>
               </li>
               <li class="hover:bg-teal-300 rounded-lg font-bold">
-                <a href="https://www.bikebd.com/upcoming-bikes-in-bangladesh"
+                <a href="https://www.bikebd.com/blog/category/news"
                   >News</a
                 >
               </li>
@@ -124,9 +124,8 @@
           <div>
             <a
               href="https://www.bikebd.com/login"
-              class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl ml-12"
-              >Login</a
-            >
+              class="btn bg-btn-primary text-white text-xl font-bold hover:bg-sky-500 w-36 h-12 rounded-xl ml-12 lg:visible invisible"
+              >Login</a>
           </div>
         </div>
       </nav>
@@ -316,7 +315,7 @@
         <!-- cards section -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <!-- card 1 -->
-          <div class="card bg-base-100 w-96 h-[580px] shadow-xl mx-auto">
+          <div class="card bg-base-100 w-full h-[580px] shadow-xl mx-auto">
             <figure class="px-5 pt-5">
               <img
                 src="./images/others/latest1.png"
@@ -342,7 +341,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card bg-base-100 w-96 h-[580px] shadow-xl mx-auto">
+          <div class="card bg-base-100 w-full h-[580px] shadow-xl mx-auto">
             <figure class="px-5 pt-5">
               <img
                 src="./images/others/latest2.png"
@@ -371,7 +370,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card bg-base-100 w-96 h-[580px] shadow-xl mx-auto">
+          <div class="card bg-base-100 w-full h-[580px] shadow-xl mx-auto">
             <figure class="px-5 pt-5">
               <img
                 src="./images/others/latest3.png"
@@ -499,7 +498,7 @@
 
         <div class="lg:flex lg:gap-28 ">
           <!-- img content -->
-          <div class="lg:w-1/2 mb-16 px-11">
+          <div class="lg:w-full mb-16 px-11">
             <img src="./images/others/Frame.png" alt="Question Sign" class="lg:h-[440px]"/>
           </div>
           <!-- Accordion content -->
@@ -554,8 +553,47 @@
           </div>
         </div>
       </section>
-
     </main>
-    <footer></footer>
+
+      <footer class=" bg-bg-footer text-white">
+        <div class="lg:flex justify-between pt-14 lg:gap-[200px] lg:px-32 pl-5">
+
+          <div class="">
+            <div class="flex gap-6">
+              <p>Download Now</p>
+              <a href="https://www.bikebd.com/terms-and-conditions"><p>License</p></a>
+            </div>
+            <div class="grid lg:grid-cols-6 grid-cols-3 pt-3 lg:gap-5 gap-y-5 text-base font-normal text-wrap">
+              <a href="https://www.bikebd.com/"><p>About</p></a>
+              <a href="https://www.bikebd.com/brand"><p>All Brands</p></a>
+              <a href="https://www.bikebd.com/bike-compare"><p>Compares</p></a>
+              <a href="https://www.bikebd.com/motorcycle/category/helmet"><p>Accessories</p></a>
+              <a href="https://www.bikebd.com/upcoming-bikes-in-bangladesh"><p>Upcoming</p></a>
+              <a href="https://www.bikebd.com/privacy-policy"><p>Privacy Policy</p></a>           
+            </div>
+            <div class="lg:visible invisible">
+              <p class=" text-white text-sm font-normal mt-8">@2025 bike. All rights reserved</p>
+            </div>
+          </div>
+          
+          <div>
+            <h2
+             class="text-xl font-medium">Get the App</h2>
+             <br>
+            <div class="grid grid-flow-row gap-4 w-32">
+              <a href="https://www.apple.com/app-store/">
+                <img src="./images/others/ios.png" alt="apple store logo">
+              </a>  
+              <a href="https://play.google.com/store/apps?hl=en&pli=1">
+              <img src="./images/others/android.png" alt="android logo">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:invisible visible">
+          <p class=" text-white text-base font-normal pt-3 pb-4 text-center">@2025 bike. All rights reserved</p>
+        </div>
+      </footer>
   </body>
 </html>
